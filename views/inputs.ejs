@@ -1,0 +1,28 @@
+<! --create a view to handle the post request. User can input source, destination and mode, it gets send as a POST request  -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div>
+    <form action ="/travelTime" method="POST">
+      <label for="source">Source:</label>
+      <input type="text" id="source" name="source" required>
+      
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" required>
+  
+      <label for="mode">Travel Mode:</label>
+      <select id="mode" name="mode" required>
+          <option value="driving">Driving</option>
+          <option value="walking">Walking</option>
+          <option value="bicycling">Bicycle</option>
+        </select>   
+      <button>Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
